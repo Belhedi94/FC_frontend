@@ -1,0 +1,8 @@
+.step-title:hover {
+    background-color: #bb8c44!important;
+    color: black!important;
+    cursor:pointer;
+}
+.step-title {
+    user-select: none;
+}

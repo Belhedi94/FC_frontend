@@ -1,0 +1,33 @@
+.form-check {
+    padding-left: 36px;
+    font-size: 0.963em;
+}
+
+input[type="radio"]:checked {
+    background-color: #B88A44;
+    border: 2px solid #B88A44;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+    background-color: #B88A44;
+    border: 2px solid #B88A44;
+}
+
+label {
+    cursor: pointer;
+}
+
+.next-btn {
+    background-image: linear-gradient(#f5e789 0%, #e0aa3e, #d5a140, #bb8c44);
+}
+input[type=text]:focus, textarea:focus {
+    background-color: #eeeeee!important;
+    border-color: #d5a140!important;
+    box-shadow: 2px 2px 20px #d5a140!important;
+    color: #000000!important;
+}
+
+input, textarea {
+    color: #eeeeee!important;
+}

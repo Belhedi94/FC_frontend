@@ -1,0 +1,47 @@
+.footer-container {
+    margin-top: 200px;
+    /*background-color: red;*/
+    height: 170px;
+    display: flex;
+
+}
+
+.footer-container .text {
+    display: flex;
+    width: 70%;
+    height: 160px;
+    justify-content: space-around;
+    /*background-color: green;*/
+}
+
+.services, .about, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: darkgray;
+}
+
+.text h4 {
+    color: #eeeeee;
+    text-transform: uppercase;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    /*background-color: red;*/
+}
+
+.twitter {
+    margin-right: 20px;
+}
+
+.footer-video video {
+    margin-top: -200px;
+}
+
+.footer-line, .copyrights {
+    width: 50%;
+    color: #eeeeee;
+    margin-left: 71px;
+}

@@ -1,0 +1,17 @@
+.sections {
+    width: 200px;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-link, .signup-link {
+    font-weight: bold;
+    color:#ffffff;
+}
+.login-link:hover, .signup-link:hover  {
+    color: #EDDE5D;
+    text-decoration: underline;
+    text-decoration-color: #EDDE5D;
+    cursor: pointer;
+}

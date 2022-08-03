@@ -1,0 +1,47 @@
+.register-container {
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    background-color: #000000;
+    width:370px;
+    height: 450px;
+    margin-top: 100px;
+    /*margin: 100px auto 0;*/
+}
+.fullname, .password, .mobile-number, .email, .button, .terms {
+    text-align: center;
+    margin: 20px;
+    color: #eeeeee;
+}
+
+.terms {
+    font-size: 12px;
+}
+
+input[type="text"], input[type="password"] {
+    background-color: black;
+}
+
+.btn-register {
+    width: 200px;
+    height: 40px;
+    background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-register:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.register-container span {
+    color: goldenrod;
+}
+
+

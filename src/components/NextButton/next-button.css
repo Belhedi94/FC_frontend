@@ -1,0 +1,8 @@
+.next-btn {
+    background-image: linear-gradient(#f5e789 0%, #e0aa3e, #d5a140, #bb8c44);
+    border: none;
+}
+.next-btn:hover {
+    color: black;
+    opacity: 70%;
+}

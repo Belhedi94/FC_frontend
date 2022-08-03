@@ -1,0 +1,57 @@
+import React, { useState } from "react";
+import "./verification-account.css";
+import axios from "../../api/axios";
+
+const VerificationAccount = () => {
+  const VERIFICATION_URL = "/two-factor-auth/verify";
+  const CONFIRM_ACCOUNT = "/account/confirm";
+  const [code, setCode] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await axios
+      .post(VERIFICATION_URL, JSON.stringify({ code }), {
+        headers: { "Content-Type": "application/json" },
+      })
+      .then(async (response) => {
+        await axios
+          .post(
+            CONFIRM_ACCOUNT,
+            JSON.stringify({ id: response.data.user.id }),
+            {
+              headers: { "Content-Type": "application/json" },
+            }
+          )
+          .then((response) => {
+            console.log(`result ${response.data.user}`);
+          });
+      });
+  };
+  return (
+    <div className={"container"}>
+      <div className={"two-factor-form-container"}>
+        <p className={"two-factor-title"}>Verify your phone</p>
+        <div className={"two-factor-container form-group"}>
+          <form>
+            <div className={"code"}>
+              <input
+                type="text"
+                id="code"
+                className={"form-control"}
+                onChange={(e) => setCode(e.target.value)}
+                placeholder={"Verification code"}
+              />
+            </div>
+            <div className={"button"}>
+              <button className={"btn-verify"} onClick={handleSubmit}>
+                Verify
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default VerificationAccount;

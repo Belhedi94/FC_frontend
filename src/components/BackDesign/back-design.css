@@ -1,0 +1,15 @@
+.card-number-back {
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+    cursor: grab;
+    user-select: none;
+    color: #000000;
+}
+
+back-img {
+    max-width: 330px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
