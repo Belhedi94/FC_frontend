@@ -1,0 +1,72 @@
+.video {
+    margin-top: -40px;
+}
+video:focus {
+    outline: none;
+}
+.design-button {
+    user-select: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    height: 60px;
+    padding: 7px;
+    color: #d5a140;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right, gold, #d5a140, #f5e789);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #000 inset;
+}
+.pre-made-button {
+    user-select: none;
+    padding: 7px;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 60px;
+    background-image: linear-gradient(#f5e789 0%, #e0aa3e, #d5a140, #bb8c44);
+    text-transform: uppercase;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.pre-made-button:hover, .design-button:hover {
+    opacity: 70%;
+}
+@media all and (max-width:767px){
+    .text-presentation  {
+        text-align: center;
+    }
+    .pre-made-button {
+        padding: 20px;
+    }
+    .paragraph-pres {
+        font-size: 1em!important;
+    }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .pre-made-button {
+        padding-top: 10px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width:374px) {
+    .navbar-brand {
+        width: 230px;
+    }
+    .navbar-toggler {
+        padding-right: 0px;
+    }
+}
+@media all and (max-width: 992px) {
+    .text-presentation {
+        text-align: center;
+    }
+}
+@media all and (min-width: 992px) {
+    .home-title {
+        margin-top: 40px;
+    }
+    .paragraph-pres {
+        font-size: 1.12em!important;
+    }
+}
